@@ -40,3 +40,25 @@ fizzbuzz(100);
 
 
 // d. If a number is divisible by 3 and 5, print ‘fizzbuzz’ instead of the number
+
+function reverseString(str){
+    for(let i = str.length - 1; i >= 0; i--){
+        console.log(str[i])
+    }
+}
+
+reverseString("Antidisestablishmentarianism");
+
+
+
+// 3. Capitalize letter
+
+// a. Write code that takes a string as input
+// capitalize the first letter of each word. 
+// Words will be separated by only one space. 
+// i.e. “hello world” should be outputted as “Hello World
+
+function capitalizeLetter(){
+    
+}
+
