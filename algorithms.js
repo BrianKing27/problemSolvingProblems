@@ -62,9 +62,13 @@ reverseString("Antidisestablishmentarianism");
 
 
 function capitalizeLetter(strTwo){
+    let newArray = "";
     let arrayOfWords = strTwo.split(" ");
     for(let i = 0; i < arrayOfWords.length; i++){
-        console.log(arrayOfWords[i].charAt(0).toUpperCase() + arrayOfWords[i].slice(1))
+        newArray += arrayOfWords[i].charAt(0).toUpperCase() + arrayOfWords[i].slice(1) + " ";
     }
+    let newString = newArray;
+    console.log(newString);
 }
-console.log(capitalizeLetter("how are you doing?"));
+
+capitalizeLetter("how are you doing?");
