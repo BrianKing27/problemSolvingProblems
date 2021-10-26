@@ -15,11 +15,22 @@
 //   3. If number checked is divisible by 3 print a string to the console in it's place.
 
 
+// c. If a number is divisible by 5, print ‘buzz’ instead of the number
+//   1. Write a function that checks each number logged.
+//   2. Go through each number and check until you reach the final number.
+//   3. If number checked is divisible by 5 print a string to the console in it's place.
+
 function fizzbuzz(number){
     for(let i = 0; i <= number; i++){
         console.log(i);
         if(i % 3 === 0){
-            console.log('fizz');
+            console.log('Fizz');
+        }
+        else if(i % 5 === 0){
+            console.log('Buzz')
+        }
+        else if(i % 3 === 0|| i % 5 ===0){
+            console.log("FizzBuzz");
         }
     }
 
@@ -27,6 +38,5 @@ function fizzbuzz(number){
 
 fizzbuzz(100);
 
-// c. If a number is divisible by 5, print ‘buzz’ instead of the number
 
 // d. If a number is divisible by 3 and 5, print ‘fizzbuzz’ instead of the number
